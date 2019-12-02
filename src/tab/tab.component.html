@@ -1,0 +1,5 @@
+<ng-container *ngIf="content && active">
+  <ng-template [ngTemplateOutlet]="content"></ng-template>
+</ng-container>
+
+<ng-content *ngIf="!content"></ng-content>

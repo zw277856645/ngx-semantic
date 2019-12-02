@@ -1,0 +1,36 @@
+.close-icon-wrapper {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 10;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: .85em;
+  display: flex;
+  visibility: hidden;
+  & > i {
+    cursor: pointer;
+    width: auto;
+    height: auto;
+    opacity: 0;
+    transition: opacity .1s linear;
+    margin: 1px 0 0 0;
+  }
+}
+
+:host(:not(.visible)) .close-icon-wrapper.valued {
+  visibility: visible;
+}
+
+:host(:not(.visible)):hover .close-icon-wrapper.valued {
+  & > i {
+    opacity: .6;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  & + .icon {
+    opacity: 0;
+  }
+}

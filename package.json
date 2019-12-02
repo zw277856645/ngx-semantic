@@ -1,0 +1,60 @@
+{
+  "name": "@demacia/ngx-semantic",
+  "version": "0.0.1",
+  "description": "semantic for angular",
+  "scripts": {
+    "build": "ng-packagr -p package.json",
+    "publish": "npm publish dist --access public",
+    "clean": "rimraf dist",
+    "lint": "tslint -c tslint.json -p tsconfig.json"
+  },
+  "$schema": "./node_modules/ng-packagr/package.schema.json",
+  "ngPackage": {
+    "lib": {
+      "entryFile": "public_api.ts"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/zw277856645/ngx-semantic"
+  },
+  "keywords": [
+    "semantic",
+    "angular"
+  ],
+  "author": "wei.zhang",
+  "license": "MIT",
+  "peerDependencies": {
+    "@angular/core": "^8.1.2",
+    "@angular/forms": "^8.1.2",
+    "zone.js": "^0.9.1",
+    "rxjs": "^6.5.1",
+    "jquery": "^3.2.1",
+    "semantic-ui-css": "~2.2.12",
+    "@demacia/cmjs-lib": "~0.0.8"
+  },
+  "devDependencies": {
+    "@angular/core": "8.1.2",
+    "@angular/common": "8.1.2",
+    "@angular/forms": "8.1.2",
+    "@angular/platform-browser": "8.1.2",
+    "@angular/platform-browser-dynamic": "8.1.2",
+    "@angular/compiler-cli": "8.1.2",
+    "@angular/compiler": "8.1.2",
+    "@types/node": "10.14.5",
+    "@types/jquery": "2.0.43",
+    "@types/semantic-ui": "2.2.0",
+    "jquery": "3.2.1",
+    "semantic-ui-css": "2.2.12",
+    "@demacia/cmjs-lib": "~0.0.8",
+    "zone.js": "0.9.1",
+    "rxjs": "6.5.1",
+    "ng-packagr": "5.1.0",
+    "ajv": "6.9.1",
+    "rimraf": "2.6.1",
+    "rxjs-tslint": "0.1.7",
+    "tslint": "5.11.0",
+    "codelyzer": "5.1.0",
+    "typescript": "3.4.5"
+  }
+}

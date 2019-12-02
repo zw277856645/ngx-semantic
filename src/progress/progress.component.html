@@ -1,0 +1,8 @@
+<ng-template #defaultTemplate>
+  <div class="bar">
+    <div class="progress" *ngIf="barLabelType"></div>
+  </div>
+  <div class="label" *ngIf="label">{{label}}</div>
+</ng-template>
+
+<ng-template [ngTemplateOutlet]="template"></ng-template>

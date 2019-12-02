@@ -1,0 +1,3 @@
+<input type="radio" [name]="name || ''">
+<label *ngIf="label">{{label}}</label>
+<ng-content *ngIf="!label"></ng-content>

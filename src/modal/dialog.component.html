@@ -1,0 +1,11 @@
+<ng-template #defaultTemplate>
+  <div class="header">{{title}}</div>
+  <div class="content" [innerHTML]="content"></div>
+  <div class="actions">
+    <button type="button" class="ui small button ok instagram">{{approveText}}</button>
+    <button type="button" class="ui small button cancel" *ngIf="showCancel">{{cancelText}}</button>
+  </div>
+</ng-template>
+
+<ng-template [ngTemplateOutlet]="template"
+             [ngTemplateOutletContext]="templateContext"></ng-template>

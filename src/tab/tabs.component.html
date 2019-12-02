@@ -1,0 +1,6 @@
+<div class="ui menu" [ngClass]="class" #menu>
+  <a class="item" *ngFor="let tab of tabs;trackBy:trackByTabs" [attr.data-tab]="tab.tabName">
+    <ng-container *switcherTemplateOutlet="tab.label">{{tab.label}}</ng-container>
+  </a>
+</div>
+<ng-content></ng-content>

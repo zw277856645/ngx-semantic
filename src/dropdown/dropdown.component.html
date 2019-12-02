@@ -1,0 +1,19 @@
+<ng-container *ngIf="leftIcon">
+  <ng-container *switcherTemplateOutlet="leftIcon">
+    <i class="icon {{leftIcon}}"></i>
+  </ng-container>
+</ng-container>
+
+<div class="default text">{{placeholder}}</div>
+
+<div class="close-icon-wrapper" [class.valued]="_value" *ngIf="clearable">
+  <ng-container *switcherTemplateOutlet="closeIcon">
+    <i class="icon {{closeIcon}}" (click)="$event.stopPropagation(); clear()"></i>
+  </ng-container>
+</div>
+
+<i class="icon dropdown" *ngIf="shouldShowDropdownIcon"></i>
+
+<div class="menu" #rootMenu>
+  <ng-content></ng-content>
+</div>
