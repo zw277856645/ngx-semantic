@@ -16,6 +16,7 @@ export * from './src/dropdown/dropdown.component';
 
 export * from './src/modal/modal.component';
 export * from './src/modal/dialog.component';
+export * from './src/modal/dialog.service';
 
 export * from './src/popup/popup-content.component';
 export * from './src/popup/popup.directive';
