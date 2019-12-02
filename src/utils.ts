@@ -1,4 +1,4 @@
-import {SimpleChange, SimpleChanges} from '@angular/core';
+import { SimpleChange, SimpleChanges } from '@angular/core';
 
 const hasOwn = Object.prototype.hasOwnProperty;
 
@@ -27,7 +27,7 @@ export function isPlainObject(obj: any) {
 export function classesContains(ele: Element, cls: string) {
     let arr = cls.split(/\s/);
     for (let i = 0, len = arr.length; i < len; i++) {
-        if (!ele.classList.contains(selector2Class(arr[i]))) {
+        if (!ele.classList.contains(selector2Class(arr[ i ]))) {
             return false;
         }
     }
@@ -41,7 +41,7 @@ export function isNotFirstChange(propChange: SimpleChange) {
 
 export function isNotFirstChanges(changes: SimpleChanges) {
     for (let change in changes) {
-        if (!isNotFirstChange(changes[change])) {
+        if (!isNotFirstChange(changes[ change ])) {
             return false;
         }
     }
@@ -58,7 +58,7 @@ export function selector2Class(value: string) {
 }
 
 export function uppercaseFirstChar(str: string) {
-    return str[0].toUpperCase() + str.substr(1);
+    return str[ 0 ].toUpperCase() + str.substr(1);
 }
 
 export type OutputReturnWrapper<T> = (fn: ((arg: T) => any) | any) => any;
