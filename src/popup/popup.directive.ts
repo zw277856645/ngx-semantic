@@ -136,11 +136,8 @@ export class PopupDirective extends Base implements OnChanges, AfterViewInit {
     }
 
     ngOnChanges(changes: SimpleChanges) {
-        if (!changes.content && !changes.position && isNotFirstChanges(changes)) {
+        if (!changes.position && isNotFirstChanges(changes)) {
             this.ngAfterViewInit();
-        }
-        if (isNotFirstChange(changes.content)) {
-            this.changeContent(this.content);
         }
         if (isNotFirstChange(changes.position)) {
             this.setPosition(this.position);
