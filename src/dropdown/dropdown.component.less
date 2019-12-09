@@ -14,7 +14,6 @@
     width: auto;
     height: auto;
     opacity: 0;
-    transition: opacity .1s linear;
     margin: 1px 0 0 0;
   }
 }
@@ -25,6 +24,7 @@
 
 :host(:not(.visible)):hover .close-icon-wrapper.valued {
   & > i {
+    transition: opacity .1s linear;
     opacity: .6;
     &:hover {
       opacity: 1;
