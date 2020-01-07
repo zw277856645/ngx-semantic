@@ -21,6 +21,8 @@ import { PopupContentComponent } from './popup/popup-content.component';
 import { TooltipComponent } from './popup/tooltip.component';
 import { DropdownComponent } from './dropdown/dropdown.component';
 import { CmjsLibModule } from '@demacia/cmjs-lib';
+import { ShapeComponent } from './shape/shape.component';
+import { ShapeItemComponent } from './shape/shape-item.component';
 
 const MODULES = [
     CommonModule,
@@ -56,7 +58,10 @@ const COMPONENTS = [
     PopupContentComponent,
     TooltipComponent,
 
-    DropdownComponent
+    DropdownComponent,
+
+    ShapeComponent,
+    ShapeItemComponent
 ];
 
 @NgModule({

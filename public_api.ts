@@ -30,3 +30,6 @@ export * from './src/tab/tab.component';
 export * from './src/tab/tabs.component';
 
 export * from './src/transition/transition.directive';
+
+export * from './src/shape/shape.component';
+export * from './src/shape/shape-item.component';
