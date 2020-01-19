@@ -27,11 +27,13 @@
   "peerDependencies": {
     "@angular/core": "^8.1.2",
     "@angular/forms": "^8.1.2",
+    "@demacia/cmjs-lib": "~0.0.8",
+    "@types/jquery": "^2.0.43",
+    "@types/semantic-ui": "^2.2.0",
     "zone.js": "^0.9.1",
     "rxjs": "^6.5.1",
     "jquery": "^3.2.1",
-    "semantic-ui-css": "~2.2.12",
-    "@demacia/cmjs-lib": "~0.0.8"
+    "semantic-ui-css": "~2.2.12"
   },
   "devDependencies": {
     "@angular/core": "8.1.2",
