@@ -1,6 +1,6 @@
 {
   "name": "@demacia/ngx-semantic",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "semantic for angular",
   "scripts": {
     "build": "ng-packagr -p package.json",
