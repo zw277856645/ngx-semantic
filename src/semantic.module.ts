@@ -23,6 +23,7 @@ import { DropdownComponent } from './dropdown/dropdown.component';
 import { CmjsLibModule } from '@demacia/cmjs-lib';
 import { ShapeComponent } from './shape/shape.component';
 import { ShapeItemComponent } from './shape/shape-item.component';
+import { SearchComponent } from './search/search.component';
 
 const MODULES = [
     CommonModule,
@@ -61,7 +62,9 @@ const COMPONENTS = [
     DropdownComponent,
 
     ShapeComponent,
-    ShapeItemComponent
+    ShapeItemComponent,
+
+    SearchComponent
 ];
 
 @NgModule({

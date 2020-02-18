@@ -33,3 +33,5 @@ export * from './src/transition/transition.directive';
 
 export * from './src/shape/shape.component';
 export * from './src/shape/shape-item.component';
+
+export * from './src/search/search.component';

@@ -1,0 +1,11 @@
+<ng-template #defaultInput>
+  <div class="ui fluid input" [class.icon]="icon" [class.rectangle]="!circular">
+    <input class="prompt" type="text" [placeholder]="placeholder" [attr.maxlength]="maxLength" autocomplete="off">
+    <ng-container *switcherTemplateOutlet="icon">
+      <i class="icon" [ngClass]="icon" *ngIf="icon"></i>
+    </ng-container>
+  </div>
+</ng-template>
+
+<ng-template [ngTemplateOutlet]="inputTemplate"></ng-template>
+<div class="results"></div>

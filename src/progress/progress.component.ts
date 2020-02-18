@@ -19,7 +19,6 @@ export class ProgressComponent extends Base implements AfterViewInit, OnChanges 
     @ViewChild('defaultTemplate', { static: true }) @Input() template: TemplateRef<any>;
 
     @Input() label: string;
-
     @Input() @InputNumber() percent: number;
 
     @Input() @InputBoolean() autoSuccess = true;
